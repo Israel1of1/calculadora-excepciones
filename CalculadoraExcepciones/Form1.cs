@@ -151,6 +151,24 @@ namespace CalculadoraExcepciones
             this.txtResultado.Text = resultado.ToString();
         }
 
+        private void CalcularLogaritmo()
+        {
+            int numero;
+            double resultado = 0;
+            //Obtener el numero
+            numero = int.Parse(this.txtNumero.Text);
+            if (numero <= 0)
+            {
+                throw new ArithmeticException("No se pueden calcular logaritmos de números menores o iguales a cero.");
+            }
+            //calculo del logaritmo
+            resultado = Math.Log10(numero);
+            //expresion
+            this.txtExpresion.Text = "log(" + numero + ")";
+            //resultado
+            this.txtResultado.Text = resultado.ToString();
+        }
+
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -186,6 +204,11 @@ namespace CalculadoraExcepciones
                 {
                     this.CalcularFactorial();
                 }
+                else if ((bool)this.radLogaritmo.Checked)
+                {
+                    this.CalcularLogaritmo();
+                }
+               
             }
 
             catch (FormatException fEx)
