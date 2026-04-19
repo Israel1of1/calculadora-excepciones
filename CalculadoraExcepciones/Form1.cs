@@ -50,7 +50,7 @@ namespace CalculadoraExcepciones
             radianes = numero * Math.PI / 180;
 
             //calculo del coseno
-            resultado = Math.Cos(radianes);
+            resultado = Math.Cos(radianes); 
 
             //expresion
             this.txtExpresion.Text = "cos(" + numero + "°)";
@@ -59,6 +59,60 @@ namespace CalculadoraExcepciones
             this.txtResultado.Text = resultado.ToString();
 
         }
+        private void CalcularSecante()
+        {
+            int numero;
+            double radianes,coseno, resultado = 0; 
+            
+
+            //obtener numero
+            numero = int.Parse(this.txtNumero.Text);
+            //convertir a radianes
+            radianes = numero * Math.PI / 180;
+            //calculo del coseno
+            coseno = Math.Cos(radianes);
+            if (Math.Abs(coseno) < 0.000001)
+            {
+                throw new DivideByZeroException("La secante no está definida para este valor.");
+            }
+
+            //calculo de la secante
+            resultado = 1 / coseno;
+
+            //expresion
+            this.txtExpresion.Text = "sec(" + numero + "°)";
+
+            //Resultado
+            this.txtResultado.Text = resultado.ToString();
+
+        }
+        //calculo de la tangente
+        public void CalcularTangente()
+        {
+            int numero;
+            double radianes,coseno, resultado = 0;
+            //para Obtener el numero
+            numero = int.Parse(this.txtNumero.Text);
+
+            //convertir a radianes
+            radianes = numero * Math.PI / 180;
+
+            coseno = Math.Cos(radianes);
+            if (Math.Abs(coseno) < 0.000001)
+            {
+                throw new DivideByZeroException("La tangente no está definida para este valor.");
+            }
+
+            //calculo de la tangente
+            resultado = Math.Tan(radianes);
+
+            //expresion
+            this.txtExpresion.Text = "tan(" + numero + "°)";
+
+            //resultado
+            this.txtResultado.Text = resultado.ToString();
+        }
+
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -78,6 +132,14 @@ namespace CalculadoraExcepciones
                 {
                     this.CalcularCoseno();
                 }
+                else if ((bool)this.radSecante.Checked)
+                {
+                    this.CalcularSecante();
+                }
+                else if ((bool)this.radTangente.Checked)
+                {
+                    this.CalcularTangente();
+                }
             }
 
             catch (FormatException fEx)
@@ -90,6 +152,22 @@ namespace CalculadoraExcepciones
                 //Error si el num es demasiado grande
                 this.txtResultado.Text = oEx.Message;
             }
+            catch (DivideByZeroException dEx)
+            {
+                //Error si el coseno es 0 para secante o tangente
+                this.txtResultado.Text = dEx.Message;
+            }
+           
+        }
+
+        private void radSeno_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radTangente_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

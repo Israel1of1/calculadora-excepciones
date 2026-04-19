@@ -48,37 +48,42 @@
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(222, 47);
+            this.lblNumero.Location = new System.Drawing.Point(148, 31);
+            this.lblNumero.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(73, 20);
+            this.lblNumero.Size = new System.Drawing.Size(50, 13);
             this.lblNumero.TabIndex = 0;
             this.lblNumero.Text = "Numero: ";
             // 
             // txtNumero
             // 
             this.txtNumero.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtNumero.Location = new System.Drawing.Point(301, 44);
+            this.txtNumero.Location = new System.Drawing.Point(201, 29);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(194, 26);
+            this.txtNumero.Size = new System.Drawing.Size(131, 20);
             this.txtNumero.TabIndex = 1;
             // 
             // radSeno
             // 
             this.radSeno.AutoSize = true;
-            this.radSeno.Location = new System.Drawing.Point(93, 109);
+            this.radSeno.Location = new System.Drawing.Point(62, 71);
+            this.radSeno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radSeno.Name = "radSeno";
-            this.radSeno.Size = new System.Drawing.Size(79, 24);
+            this.radSeno.Size = new System.Drawing.Size(55, 17);
             this.radSeno.TabIndex = 2;
             this.radSeno.TabStop = true;
             this.radSeno.Text = "SENO";
             this.radSeno.UseVisualStyleBackColor = true;
+            this.radSeno.CheckedChanged += new System.EventHandler(this.radSeno_CheckedChanged);
             // 
             // radCoseno
             // 
             this.radCoseno.AutoSize = true;
-            this.radCoseno.Location = new System.Drawing.Point(301, 109);
+            this.radCoseno.Location = new System.Drawing.Point(201, 71);
+            this.radCoseno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radCoseno.Name = "radCoseno";
-            this.radCoseno.Size = new System.Drawing.Size(102, 24);
+            this.radCoseno.Size = new System.Drawing.Size(70, 17);
             this.radCoseno.TabIndex = 3;
             this.radCoseno.TabStop = true;
             this.radCoseno.Text = "COSENO";
@@ -87,20 +92,23 @@
             // radTangente
             // 
             this.radTangente.AutoSize = true;
-            this.radTangente.Location = new System.Drawing.Point(517, 109);
+            this.radTangente.Location = new System.Drawing.Point(345, 71);
+            this.radTangente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radTangente.Name = "radTangente";
-            this.radTangente.Size = new System.Drawing.Size(120, 24);
+            this.radTangente.Size = new System.Drawing.Size(84, 17);
             this.radTangente.TabIndex = 4;
             this.radTangente.TabStop = true;
             this.radTangente.Text = "TANGENTE";
             this.radTangente.UseVisualStyleBackColor = true;
+            this.radTangente.CheckedChanged += new System.EventHandler(this.radTangente_CheckedChanged);
             // 
             // radSecante
             // 
             this.radSecante.AutoSize = true;
-            this.radSecante.Location = new System.Drawing.Point(93, 181);
+            this.radSecante.Location = new System.Drawing.Point(62, 118);
+            this.radSecante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radSecante.Name = "radSecante";
-            this.radSecante.Size = new System.Drawing.Size(109, 24);
+            this.radSecante.Size = new System.Drawing.Size(75, 17);
             this.radSecante.TabIndex = 5;
             this.radSecante.TabStop = true;
             this.radSecante.Text = "SECANTE";
@@ -109,9 +117,10 @@
             // radRaiz
             // 
             this.radRaiz.AutoSize = true;
-            this.radRaiz.Location = new System.Drawing.Point(301, 181);
+            this.radRaiz.Location = new System.Drawing.Point(201, 118);
+            this.radRaiz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radRaiz.Name = "radRaiz";
-            this.radRaiz.Size = new System.Drawing.Size(168, 24);
+            this.radRaiz.Size = new System.Drawing.Size(113, 17);
             this.radRaiz.TabIndex = 6;
             this.radRaiz.TabStop = true;
             this.radRaiz.Text = "RAÍZ CUADRADA";
@@ -120,9 +129,10 @@
             // radFactorial
             // 
             this.radFactorial.AutoSize = true;
-            this.radFactorial.Location = new System.Drawing.Point(517, 181);
+            this.radFactorial.Location = new System.Drawing.Point(345, 118);
+            this.radFactorial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radFactorial.Name = "radFactorial";
-            this.radFactorial.Size = new System.Drawing.Size(124, 24);
+            this.radFactorial.Size = new System.Drawing.Size(84, 17);
             this.radFactorial.TabIndex = 7;
             this.radFactorial.TabStop = true;
             this.radFactorial.Text = "FACTORIAL";
@@ -131,9 +141,10 @@
             // radLogaritmo
             // 
             this.radLogaritmo.AutoSize = true;
-            this.radLogaritmo.Location = new System.Drawing.Point(93, 249);
+            this.radLogaritmo.Location = new System.Drawing.Point(62, 162);
+            this.radLogaritmo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radLogaritmo.Name = "radLogaritmo";
-            this.radLogaritmo.Size = new System.Drawing.Size(130, 24);
+            this.radLogaritmo.Size = new System.Drawing.Size(89, 17);
             this.radLogaritmo.TabIndex = 8;
             this.radLogaritmo.TabStop = true;
             this.radLogaritmo.Text = "LOGARITMO";
@@ -142,9 +153,10 @@
             // btnCalcular
             // 
             this.btnCalcular.BackColor = System.Drawing.Color.White;
-            this.btnCalcular.Location = new System.Drawing.Point(301, 302);
+            this.btnCalcular.Location = new System.Drawing.Point(201, 196);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(194, 68);
+            this.btnCalcular.Size = new System.Drawing.Size(129, 44);
             this.btnCalcular.TabIndex = 9;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = false;
@@ -153,50 +165,55 @@
             // lblExpresion
             // 
             this.lblExpresion.AutoSize = true;
-            this.lblExpresion.Location = new System.Drawing.Point(93, 404);
+            this.lblExpresion.Location = new System.Drawing.Point(62, 263);
+            this.lblExpresion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblExpresion.Name = "lblExpresion";
-            this.lblExpresion.Size = new System.Drawing.Size(107, 20);
+            this.lblExpresion.Size = new System.Drawing.Size(72, 13);
             this.lblExpresion.TabIndex = 10;
             this.lblExpresion.Text = "EXPRESIÓN:";
             // 
             // txtExpresion
             // 
-            this.txtExpresion.Location = new System.Drawing.Point(226, 401);
+            this.txtExpresion.Location = new System.Drawing.Point(151, 261);
+            this.txtExpresion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtExpresion.Name = "txtExpresion";
-            this.txtExpresion.Size = new System.Drawing.Size(415, 26);
+            this.txtExpresion.Size = new System.Drawing.Size(278, 20);
             this.txtExpresion.TabIndex = 11;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(97, 465);
+            this.lblResultado.Location = new System.Drawing.Point(65, 302);
+            this.lblResultado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(112, 20);
+            this.lblResultado.Size = new System.Drawing.Size(76, 13);
             this.lblResultado.TabIndex = 12;
             this.lblResultado.Text = "RESULTADO:";
             // 
             // txtResultado
             // 
-            this.txtResultado.Location = new System.Drawing.Point(226, 462);
+            this.txtResultado.Location = new System.Drawing.Point(151, 300);
+            this.txtResultado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(415, 26);
+            this.txtResultado.Size = new System.Drawing.Size(278, 20);
             this.txtResultado.TabIndex = 13;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(8, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 20);
+            this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "CALCULADORA";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(800, 532);
+            this.ClientSize = new System.Drawing.Size(533, 346);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.lblResultado);
@@ -212,6 +229,7 @@
             this.Controls.Add(this.radSeno);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.lblNumero);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -9,3 +9,14 @@ C:\Users\USER\Desktop\ProyectoCalculadoraExcepciones\CalculadoraExcepciones\obj\
 C:\Users\USER\Desktop\ProyectoCalculadoraExcepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.exe
 C:\Users\USER\Desktop\ProyectoCalculadoraExcepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.pdb
 C:\Users\USER\Desktop\ProyectoCalculadoraExcepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.exe.config
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\bin\Debug\CalculadoraExcepciones.exe.config
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\bin\Debug\CalculadoraExcepciones.exe
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\bin\Debug\CalculadoraExcepciones.pdb
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.csproj.AssemblyReference.cache
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.exe.config
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.Form1.resources
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.Properties.Resources.resources
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.csproj.GenerateResource.cache
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.csproj.CoreCompileInputs.cache
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.exe
+C:\Users\USER\calculadora-excepciones\CalculadoraExcepciones\obj\Debug\CalculadoraExcepciones.pdb
