@@ -113,6 +113,44 @@ namespace CalculadoraExcepciones
             this.txtResultado.Text = resultado.ToString();
         }
 
+        private void CalcularRaizCuadrada()
+        {
+            int numero;
+            double resultado = 0;
+            //Obtener el numero
+            numero = int.Parse(this.txtNumero.Text);
+            if (numero < 0)
+            {
+                throw new ArithmeticException("No se pueden calcular raíces cuadradas de números negativos.");
+            }
+            //calculo de la raiz cuadrada
+            resultado = Math.Sqrt(numero);
+            //expresion
+            this.txtExpresion.Text = "√(" + numero + ")";
+            //resultado
+            this.txtResultado.Text = resultado.ToString();
+        }
+
+        private void CalcularFactorial()
+        {
+            int numero, resultado = 1;
+            //Obtener el numero
+            numero = int.Parse(this.txtNumero.Text);
+            if (numero < 0)
+            {
+                throw new InvalidOperationException("No se pueden calcular factoriales de números negativos.");
+            }
+            //calculo del factorial
+            for (int i = 1; i <= numero; i++)
+            {
+                resultado *= i;
+            }
+            //Expresión
+            this.txtExpresion.Text = numero + "!";
+            //Resultado
+            this.txtResultado.Text = resultado.ToString();
+        }
+
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -140,6 +178,14 @@ namespace CalculadoraExcepciones
                 {
                     this.CalcularTangente();
                 }
+                else if ((bool)this.radRaiz.Checked)
+                {
+                    this.CalcularRaizCuadrada();
+                }
+                else if ((bool)this.radFactorial.Checked)
+                {
+                    this.CalcularFactorial();
+                }
             }
 
             catch (FormatException fEx)
@@ -157,7 +203,20 @@ namespace CalculadoraExcepciones
                 //Error si el coseno es 0 para secante o tangente
                 this.txtResultado.Text = dEx.Message;
             }
-           
+            catch (ArithmeticException aEx)
+            {
+                this.txtResultado.Text = aEx.Message;
+            }
+            catch (InvalidOperationException iEx)
+            {
+                this.txtResultado.Text = iEx.Message;
+            }
+            catch (Exception ex)
+                {
+                    //Cualquier otro error
+                    this.txtResultado.Text = "Ocurrió un error inesperado: " + ex.Message;
+            }
+
         }
 
         private void radSeno_CheckedChanged(object sender, EventArgs e)
